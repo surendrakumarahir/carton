@@ -7,13 +7,14 @@ import {
   Image,
   Dimensions,
   KeyboardAvoidingView,
+    TouchableOpacity,
   ScrollView,
 } from 'react-native';
 import {connect} from 'react-redux';
-import {Container, Icon, Input, Item} from 'native-base';
+import {Container, Icon as NIcon, Input, Item} from 'native-base';
 import ProductGrid from '../components/small/ProductGrid';
 import {getFeaturedProduct, getLatestProduct} from '../actions';
-
+import Icon from 'react-native-vector-icons/Ionicons';
 class Deshboard extends React.Component {
   static navigationOptions = {
     header: null,
@@ -50,12 +51,16 @@ class Deshboard extends React.Component {
     return (
       <View style={styles.container}>
         <StatusBar backgroundColor="#fff" barStyle="dark-content" />
+
         <View style={styles.top}>
+
           {logo ? (
             <Image style={styles.logo} source={require('../asset/logo.png')} />
           ) : null}
-
-          <View style={{width: 350, marginTop: searchClass ? 30 : 0}}>
+          <TouchableOpacity onPress={() => this.props.navigation.toggleDrawer()}  style={{ position: 'absolute' , top: 10, right: "10%"}}>
+            <Icon  name="ios-menu" color="#838383" size={35} />
+          </TouchableOpacity>
+          <View style={{width: 350, alignSelf: 'center', marginTop: searchClass ? 30 : 0}}>
             <Item searchBar rounded>
               <Input
                 onBlur={() => this.onBlur()}
@@ -63,7 +68,7 @@ class Deshboard extends React.Component {
                 placeholder="Search Product"
                 style={styles.searchInput}
               />
-              <Icon name="ios-search" style={styles.searchIcons} />
+              <NIcon name="ios-search" style={styles.searchIcons} />
             </Item>
           </View>
         </View>
@@ -101,16 +106,17 @@ const styles = StyleSheet.create({
     borderBottomColor: '#e7e5f0',
     borderBottomWidth: 1,
     width: '100%',
-    alignItems: 'center',
+    //alignItems: 'center',
   },
   logo: {
-    width: 320,
-    height: 120,
+    marginLeft: "10%",
+    width: 250,
+    height: 70,
     resizeMode: 'contain',
   },
   searchInput: {
     marginLeft: 10,
-    height: 60,
+    height: 50,
   },
   searchIcons: {
     marginRight: 5,
@@ -118,7 +124,7 @@ const styles = StyleSheet.create({
   },
 
   bottomContainer: {
-    flex: 5,
+    flex: 6,
     backgroundColor: '#f8f8ff',
     width: '100%',
     paddingHorizontal: 15,
