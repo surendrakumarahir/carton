@@ -21,7 +21,7 @@ const styles = StyleSheet.create({
   featureProduct: {
     width: (width - 60) / 3,
     alignItems: 'center',
-    margin:5,
+    margin: 5,
     backgroundColor: '#e1dfe0',
     paddingTop: 0,
     paddingBottom: 10,
