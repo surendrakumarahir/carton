@@ -15,6 +15,7 @@ import NavigationDrawerStructure from './components/nav/NavigationDrawerStructur
 import CustomSidebarMenu from './components/nav/CustomSidebarMenu';
 import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
+
 import Icon from 'react-native-vector-icons/Ionicons';
 
 const defaultOptions = {
@@ -54,7 +55,7 @@ const MyDrawerNavigator = createDrawerNavigator(
 const MainTabs = createBottomTabNavigator(
   {
     Deshboard: {
-      screen: Deshboard,
+      screen: MyDrawerNavigator,
       navigationOptions: {
         tabBarLabel: 'Home',
         tabBarIcon: ({tintColor}) => (

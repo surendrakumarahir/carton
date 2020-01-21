@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {View, StyleSheet, Image, Text} from 'react-native';
-import {connect} from 'react-redux';
-import {removeUserData} from '../../actions';
-import Icon from 'react-native-vector-icons/Ionicons';
+// import {connect} from 'react-redux';
+// import {removeUserData} from '../../actions';
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 class CustomSidebarMenu extends Component {
   constructor() {
@@ -15,37 +15,63 @@ class CustomSidebarMenu extends Component {
     //You can find the Icons from here https://material.io/tools/icons/
     this.items = [
       {
-        navOptionThumb: 'md-apps',
-        navOptionName: 'Deshboard',
+        navOptionThumb: 'home',
+        navOptionName: 'Home',
         screenToNavigate: 'Deshboard',
       },
       {
-        navOptionThumb: 'ios-home',
-        navOptionName: 'Move Home',
-        screenToNavigate: 'MoveHome',
+        navOptionThumb: 'account',
+        navOptionName: 'My Profile',
+        screenToNavigate: 'Profile',
       },
       {
-        navOptionThumb: 'ios-log-out',
-        navOptionName: 'Move Goods',
-        screenToNavigate: 'MoveGoods',
+        navOptionThumb: 'format-list-bulleted',
+        navOptionName: 'My Inquiries',
+        screenToNavigate: 'Inquiry',
+      },
+      {
+        navOptionThumb: 'content-save',
+        navOptionName: 'Saved products',
+        screenToNavigate: 'SavedProducts',
+      },
+      {
+        navOptionThumb: 'account-circle',
+        navOptionName: 'About Carton',
+        screenToNavigate: 'About',
+      },
+      {
+        navOptionThumb: 'file-document-outline',
+        navOptionName: 'Term and Conditions',
+        screenToNavigate: 'TermAndConditions',
+      },
+      {
+        navOptionThumb: 'comment-question',
+        navOptionName: 'FAQ',
+        screenToNavigate: 'FAQ',
+      },
+      {
+        navOptionThumb: 'help-circle',
+        navOptionName: 'Help',
+        screenToNavigate: 'Help',
       },
     ];
   }
+
   logout = () => {
-    // console.log('working');
+    console.log('working');
     // console.log(this.props.userData);
     // console.log(this.props.token);
-    this.props.removeUserData({
-      user_id: this.props.userData.id,
-      access_token: this.props.token,
-    });
+    // this.props.removeUserData({
+    //   user_id: this.props.userData.id,
+    //   access_token: this.props.token,
+    // });
   };
   render() {
     return (
       <View style={styles.sideMenuContainer}>
         {/*Top Large Image */}
         <Image
-          source={require('../../asset/profile.png')}
+          source={require('../../asset/logo.png')}
           style={styles.sideMenuProfileIcon}
         />
         {/*Divider between Top Image and Sidebar Option*/}
@@ -95,7 +121,7 @@ class CustomSidebarMenu extends Component {
               paddingBottom: 5,
               marginLeft: 20,
             }}>
-            <Icon name="ios-log-out" size={25} color="#808080" />
+            <Icon name="logout" size={25} color="#808080" />
             <Text
               onPress={() => this.logout()}
               style={{fontSize: 25, marginLeft: 20}}>
@@ -107,16 +133,17 @@ class CustomSidebarMenu extends Component {
     );
   }
 }
-const mapStateToProps = state => {
-  return {
-    userData: state.app.userData,
-    token: state.app.token,
-  };
-};
-export default connect(
-  mapStateToProps,
-  {removeUserData},
-)(CustomSidebarMenu);
+// const mapStateToProps = state => {
+//   return {
+//     userData: state.app.userData,
+//     token: state.app.token,
+//   };
+// };
+// export default connect(
+//   mapStateToProps,
+//   {removeUserData},
+// )(CustomSidebarMenu);
+export default CustomSidebarMenu;
 const styles = StyleSheet.create({
   sideMenuContainer: {
     width: '100%',

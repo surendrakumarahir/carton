@@ -7,14 +7,21 @@ import {
   Image,
   Dimensions,
   KeyboardAvoidingView,
-    TouchableOpacity,
+  TouchableOpacity,
   ScrollView,
+  SafeAreaView,
 } from 'react-native';
 import {connect} from 'react-redux';
 import {Container, Icon as NIcon, Input, Item} from 'native-base';
 import ProductGrid from '../components/small/ProductGrid';
 import {getFeaturedProduct, getLatestProduct} from '../actions';
 import Icon from 'react-native-vector-icons/Ionicons';
+import HorizontalScroll from '../components/small/HorizontalScroll';
+import {
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
+} from 'react-native-responsive-screen';
+
 class Deshboard extends React.Component {
   static navigationOptions = {
     header: null,
@@ -51,33 +58,102 @@ class Deshboard extends React.Component {
     return (
       <View style={styles.container}>
         <StatusBar backgroundColor="#fff" barStyle="dark-content" />
+        <SafeAreaView style={{flex: 1}}>
+          <View style={styles.top}>
+            {logo ? (
+              <View
+                style={styles.headerBar}>
+                <TouchableOpacity
+                  onPress={() => this.props.navigation.toggleDrawer()}
+                  style={{marginTop: 10}}>
+                  <Icon name="ios-menu" color="#838383" size={40} />
+                </TouchableOpacity>
+                <Image
+                  style={styles.logo}
+                  source={require('../asset/logo.png')}
+                />
 
-        <View style={styles.top}>
-
-          {logo ? (
-            <Image style={styles.logo} source={require('../asset/logo.png')} />
-          ) : null}
-          <TouchableOpacity onPress={() => this.props.navigation.toggleDrawer()}  style={{ position: 'absolute' , top: 10, right: "10%"}}>
-            <Icon  name="ios-menu" color="#838383" size={35} />
-          </TouchableOpacity>
-          <View style={{width: 350, alignSelf: 'center', marginTop: searchClass ? 30 : 0}}>
-            <Item searchBar rounded>
-              <Input
-                onBlur={() => this.onBlur()}
-                onFocus={() => this.onFocus()}
-                placeholder="Search Product"
-                style={styles.searchInput}
-              />
-              <NIcon name="ios-search" style={styles.searchIcons} />
-            </Item>
+                <TouchableOpacity
+                  onPress={() => this.props.navigation.toggleDrawer()}
+                  style={{marginTop: 10}}>
+                  <Icon name="ios-notifications" color="#838383" size={40} />
+                </TouchableOpacity>
+              </View>
+            ) : null}
+            <View
+              style={{
+                width: 350,
+                alignSelf: 'center',
+                marginTop: searchClass ? 30 : 0,
+              }}>
+              <Item searchBar rounded>
+                <Input
+                  onBlur={() => this.onBlur()}
+                  onFocus={() => this.onFocus()}
+                  placeholder="Search Product"
+                  style={styles.searchInput}
+                />
+                <NIcon name="ios-search" style={styles.searchIcons} />
+              </Item>
+            </View>
           </View>
-        </View>
-        <View style={styles.bottomContainer}>
-          <ScrollView showsVerticalScrollIndicator={false}>
-            <ProductGrid title="Feature Product" data={featured_product} imagePath='http://carton.imperialitforweb.com/public/uploads/product' />
-            <ProductGrid title="Latest Product" data={latest_product} imagePath='http://carton.imperialitforweb.com/public/uploads/product' />
-          </ScrollView>
-        </View>
+          <View style={styles.bottomContainer}>
+            <ScrollView showsVerticalScrollIndicator={false}>
+              <View style={{marginVertical: 20}}>
+                {/*<PostHead heading="Discount Coupon Codes" />*/}
+                <HorizontalScroll>
+                  <Image
+                    style={styles.bannerDesign}
+                    source={require('../asset/permotions/permotion1.jpg')}
+                  />
+                  <Image
+                    style={styles.bannerDesign}
+                    source={require('../asset/permotions/permotion2.jpg')}
+                  />
+                  <Image
+                    style={styles.bannerDesign}
+                    source={require('../asset/permotions/permotion3.jpg')}
+                  />
+                </HorizontalScroll>
+              </View>
+              <View style={{marginBottom: 20}}>
+                <Text style={styles.featureLabel}>categories</Text>
+                <HorizontalScroll>
+                  <Image
+                    style={styles.categoryDesign}
+                    source={require('../asset/permotions/permotion1.jpg')}
+                  />
+                  <Image
+                    style={styles.categoryDesign}
+                    source={require('../asset/permotions/permotion2.jpg')}
+                  />
+                  <Image
+                    style={styles.categoryDesign}
+                    source={require('../asset/permotions/permotion3.jpg')}
+                  />
+                  <Image
+                    style={styles.categoryDesign}
+                    source={require('../asset/permotions/permotion2.jpg')}
+                  />
+                  <Image
+                    style={styles.categoryDesign}
+                    source={require('../asset/permotions/permotion3.jpg')}
+                  />
+                </HorizontalScroll>
+              </View>
+              <ProductGrid
+                title="Feature Product"
+                data={featured_product}
+                imagePath="http://carton.imperialitforweb.com/public/uploads/product"
+              />
+              <ProductGrid
+                title="Latest Product"
+                data={latest_product}
+                imagePath="http://carton.imperialitforweb.com/public/uploads/product"
+              />
+            </ScrollView>
+          </View>
+        </SafeAreaView>
       </View>
     );
   }
@@ -105,11 +181,11 @@ const styles = StyleSheet.create({
     backgroundColor: '#ffffff',
     borderBottomColor: '#e7e5f0',
     borderBottomWidth: 1,
-    width: '100%',
+    width: wp(100),
+    paddingHorizontal: 10,
     //alignItems: 'center',
   },
   logo: {
-    marginLeft: "10%",
     width: 250,
     height: 70,
     resizeMode: 'contain',
@@ -128,5 +204,31 @@ const styles = StyleSheet.create({
     backgroundColor: '#f8f8ff',
     width: '100%',
     paddingHorizontal: 15,
+  },
+  featureLabel: {
+    color: '#e30613',
+    fontSize: 20,
+    marginVertical: 10,
+  },
+  bannerDesign: {
+    flex: 1,
+    marginRight: wp(5),
+    height: hp(30),
+    resizeMode: 'cover',
+    width: wp(70),
+  },
+  categoryDesign: {
+    flex: 1,
+    borderRadius: 5,
+    borderWidth: 1,
+    marginRight: wp(3),
+    height: hp(15),
+    resizeMode: 'cover',
+    width: wp(25),
+  },
+  headerBar: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginHorizontal: 10,
   },
 });
