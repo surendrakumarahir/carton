@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, StyleSheet, Image, Text} from 'react-native';
+import {View, StyleSheet, Image, Text, SafeAreaView} from 'react-native';
 // import {connect} from 'react-redux';
 // import {removeUserData} from '../../actions';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
@@ -68,7 +68,8 @@ class CustomSidebarMenu extends Component {
   };
   render() {
     return (
-      <View style={styles.sideMenuContainer}>
+      <SafeAreaView>
+         <View style={styles.sideMenuContainer}>
         {/*Top Large Image */}
         <Image
           source={require('../../asset/logo.png')}
@@ -130,7 +131,9 @@ class CustomSidebarMenu extends Component {
           </View>
         </View>
       </View>
-    );
+    
+      </SafeAreaView>
+     );
   }
 }
 // const mapStateToProps = state => {
