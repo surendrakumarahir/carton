@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* reactdemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* reactdemoTests.m */; };
+		00E356F31AD99517003FC87E /* CartonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CartonTests.m */; };
 		016CC8DB54A04BB98579E9F1 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2985E3BBA63B4598828D780F /* MaterialCommunityIcons.ttf */; };
 		0B0DD1B89DA841228AD244EE /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6E56B40A83B4FFFB1A3792E /* EvilIcons.ttf */; };
 		0D3B571ABF81498F935FF692 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CDE80C19639A4E6A87262732 /* Octicons.ttf */; };
@@ -18,8 +18,8 @@
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* reactdemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* reactdemoTests.m */; };
-		392F2B42FA3174813C7C0049 /* libPods-reactdemo-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828F9E67B6E102A57218FD6 /* libPods-reactdemo-tvOSTests.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* CartonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* CartonTests.m */; };
+		392F2B42FA3174813C7C0049 /* libPods-Carton-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828F9E67B6E102A57218FD6 /* libPods-Carton-tvOSTests.a */; };
 		4ED02F580C084ED5B0831203 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 97434C0E27E4443DBB804D8F /* MaterialIcons.ttf */; };
 		57DAEA682CE8450B9A2D1127 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 410C8FA265184B419D707C15 /* AntDesign.ttf */; };
 		680C47A9845D4A4F895DD541 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5699E84E26744CA49CACA402 /* Foundation.ttf */; };
@@ -30,12 +30,12 @@
 		9E2EBFCCD9024F5BA768E4B8 /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F26944DD5D5841708D9A554E /* FontAwesome5_Regular.ttf */; };
 		A842FA3C187649E2B3CBE7B6 /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46E642730A684BC6B5D041F1 /* Ionicons.ttf */; };
 		AC43E96E91B84BC7B13AFAE7 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C1849FEE604642D2887CA1F0 /* SimpleLineIcons.ttf */; };
-		B1AC5C8CD043ADEC50681F21 /* libPods-reactdemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FF8FA954DD17E2890019C0 /* libPods-reactdemo.a */; };
-		D1EE9B588728A77550613D4A /* libPods-reactdemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DF00B23C6188BD959FC827 /* libPods-reactdemoTests.a */; };
+		B1AC5C8CD043ADEC50681F21 /* libPods-Carton.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 91FF8FA954DD17E2890019C0 /* libPods-Carton.a */; };
+		D1EE9B588728A77550613D4A /* libPods-CartonTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1DF00B23C6188BD959FC827 /* libPods-CartonTests.a */; };
 		D6BBA7E8B31541F08D7915ED /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C4150D2CCB45469BB6C68C38 /* Fontisto.ttf */; };
 		E81B4DDAFD884C119829CAEC /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2711FD80BED4A9295C4D935 /* Zocial.ttf */; };
 		EE032A77F6F14029B1BBDBA3 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C9D9FEB856584DFE9B45B8E5 /* FontAwesome5_Solid.ttf */; };
-		F42F2C9BD76F8BFA186ACCF8 /* libPods-reactdemo-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F37847925BFAE27910B2C08 /* libPods-reactdemo-tvOS.a */; };
+		F42F2C9BD76F8BFA186ACCF8 /* libPods-Carton-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F37847925BFAE27910B2C08 /* libPods-Carton-tvOS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,45 +44,45 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = reactdemo;
+			remoteInfo = Carton;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "reactdemo-tvOS";
+			remoteInfo = "Carton-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* reactdemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = reactdemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* CartonTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartonTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* reactdemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = reactdemoTests.m; sourceTree = "<group>"; };
-		10987322456D8868C9325BE9 /* Pods-reactdemo-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactdemo-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-reactdemo-tvOS/Pods-reactdemo-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* reactdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = reactdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = reactdemo/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = reactdemo/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* CartonTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CartonTests.m; sourceTree = "<group>"; };
+		10987322456D8868C9325BE9 /* Pods-Carton-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carton-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-Carton-tvOS/Pods-Carton-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* Carton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = Carton/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = Carton/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = reactdemo/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = reactdemo/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = reactdemo/main.m; sourceTree = "<group>"; };
-		175E19C0C59D07CCD3337C44 /* Pods-reactdemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactdemoTests.debug.xcconfig"; path = "Target Support Files/Pods-reactdemoTests/Pods-reactdemoTests.debug.xcconfig"; sourceTree = "<group>"; };
-		1F37847925BFAE27910B2C08 /* libPods-reactdemo-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactdemo-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		27DF77B72D9835B3C1BF88AB /* Pods-reactdemo-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactdemo-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-reactdemo-tvOSTests/Pods-reactdemo-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		2828F9E67B6E102A57218FD6 /* libPods-reactdemo-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactdemo-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Carton/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Carton/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Carton/main.m; sourceTree = "<group>"; };
+		175E19C0C59D07CCD3337C44 /* Pods-CartonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartonTests.debug.xcconfig"; path = "Target Support Files/Pods-CartonTests/Pods-CartonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F37847925BFAE27910B2C08 /* libPods-Carton-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Carton-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		27DF77B72D9835B3C1BF88AB /* Pods-Carton-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carton-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-Carton-tvOSTests/Pods-Carton-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		2828F9E67B6E102A57218FD6 /* libPods-Carton-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Carton-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2985E3BBA63B4598828D780F /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* reactdemo-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "reactdemo-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* reactdemo-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "reactdemo-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E47B1E0B4A5D006451C7 /* Carton-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Carton-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* Carton-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Carton-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		410C8FA265184B419D707C15 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		456627DEB24E4EE6AFE290EB /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		46E642730A684BC6B5D041F1 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
-		4CD5ED6F4504AD1FB17965F2 /* Pods-reactdemo-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactdemo-tvOS.release.xcconfig"; path = "Target Support Files/Pods-reactdemo-tvOS/Pods-reactdemo-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		4CD5ED6F4504AD1FB17965F2 /* Pods-Carton-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carton-tvOS.release.xcconfig"; path = "Target Support Files/Pods-Carton-tvOS/Pods-Carton-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		51BDC94133E64226B20D7261 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
 		5699E84E26744CA49CACA402 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
-		8C878B03E08B212C4A577BBC /* Pods-reactdemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactdemoTests.release.xcconfig"; path = "Target Support Files/Pods-reactdemoTests/Pods-reactdemoTests.release.xcconfig"; sourceTree = "<group>"; };
-		91FF8FA954DD17E2890019C0 /* libPods-reactdemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactdemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C878B03E08B212C4A577BBC /* Pods-CartonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartonTests.release.xcconfig"; path = "Target Support Files/Pods-CartonTests/Pods-CartonTests.release.xcconfig"; sourceTree = "<group>"; };
+		91FF8FA954DD17E2890019C0 /* libPods-Carton.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Carton.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		97434C0E27E4443DBB804D8F /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
 		A3E895648DF14C9EA0F2227D /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
 		B6E56B40A83B4FFFB1A3792E /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
@@ -90,15 +90,15 @@
 		C4150D2CCB45469BB6C68C38 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		C9D9FEB856584DFE9B45B8E5 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		CDE80C19639A4E6A87262732 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
-		D1DF00B23C6188BD959FC827 /* libPods-reactdemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-reactdemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1DF00B23C6188BD959FC827 /* libPods-CartonTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CartonTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2711FD80BED4A9295C4D935 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
-		E4FA4EFBE2C599B879C8659C /* Pods-reactdemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactdemo.debug.xcconfig"; path = "Target Support Files/Pods-reactdemo/Pods-reactdemo.debug.xcconfig"; sourceTree = "<group>"; };
+		E4FA4EFBE2C599B879C8659C /* Pods-Carton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carton.debug.xcconfig"; path = "Target Support Files/Pods-Carton/Pods-Carton.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		EDC13DED563540C2ABD53201 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		F26944DD5D5841708D9A554E /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
-		F4A72B31846F79B7B46B8CC6 /* Pods-reactdemo-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactdemo-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-reactdemo-tvOSTests/Pods-reactdemo-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		FA08BF7C443BB471E4BEF987 /* Pods-reactdemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-reactdemo.release.xcconfig"; path = "Target Support Files/Pods-reactdemo/Pods-reactdemo.release.xcconfig"; sourceTree = "<group>"; };
+		F4A72B31846F79B7B46B8CC6 /* Pods-Carton-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carton-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-Carton-tvOSTests/Pods-Carton-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA08BF7C443BB471E4BEF987 /* Pods-Carton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Carton.release.xcconfig"; path = "Target Support Files/Pods-Carton/Pods-Carton.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D1EE9B588728A77550613D4A /* libPods-reactdemoTests.a in Frameworks */,
+				D1EE9B588728A77550613D4A /* libPods-CartonTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B1AC5C8CD043ADEC50681F21 /* libPods-reactdemo.a in Frameworks */,
+				B1AC5C8CD043ADEC50681F21 /* libPods-Carton.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F42F2C9BD76F8BFA186ACCF8 /* libPods-reactdemo-tvOS.a in Frameworks */,
+				F42F2C9BD76F8BFA186ACCF8 /* libPods-Carton-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,20 +130,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				392F2B42FA3174813C7C0049 /* libPods-reactdemo-tvOSTests.a in Frameworks */,
+				392F2B42FA3174813C7C0049 /* libPods-Carton-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* reactdemoTests */ = {
+		00E356EF1AD99517003FC87E /* CartonTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* reactdemoTests.m */,
+				00E356F21AD99517003FC87E /* CartonTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = reactdemoTests;
+			path = CartonTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -154,7 +154,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* reactdemo */ = {
+		13B07FAE1A68108700A75B9A /* Carton */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -165,7 +165,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = reactdemo;
+			name = Carton;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -173,10 +173,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				91FF8FA954DD17E2890019C0 /* libPods-reactdemo.a */,
-				1F37847925BFAE27910B2C08 /* libPods-reactdemo-tvOS.a */,
-				2828F9E67B6E102A57218FD6 /* libPods-reactdemo-tvOSTests.a */,
-				D1DF00B23C6188BD959FC827 /* libPods-reactdemoTests.a */,
+				91FF8FA954DD17E2890019C0 /* libPods-Carton.a */,
+				1F37847925BFAE27910B2C08 /* libPods-Carton-tvOS.a */,
+				2828F9E67B6E102A57218FD6 /* libPods-Carton-tvOSTests.a */,
+				D1DF00B23C6188BD959FC827 /* libPods-CartonTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -184,14 +184,14 @@
 		62697FA2ED30EFC85A8DF5AC /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E4FA4EFBE2C599B879C8659C /* Pods-reactdemo.debug.xcconfig */,
-				FA08BF7C443BB471E4BEF987 /* Pods-reactdemo.release.xcconfig */,
-				10987322456D8868C9325BE9 /* Pods-reactdemo-tvOS.debug.xcconfig */,
-				4CD5ED6F4504AD1FB17965F2 /* Pods-reactdemo-tvOS.release.xcconfig */,
-				F4A72B31846F79B7B46B8CC6 /* Pods-reactdemo-tvOSTests.debug.xcconfig */,
-				27DF77B72D9835B3C1BF88AB /* Pods-reactdemo-tvOSTests.release.xcconfig */,
-				175E19C0C59D07CCD3337C44 /* Pods-reactdemoTests.debug.xcconfig */,
-				8C878B03E08B212C4A577BBC /* Pods-reactdemoTests.release.xcconfig */,
+				E4FA4EFBE2C599B879C8659C /* Pods-Carton.debug.xcconfig */,
+				FA08BF7C443BB471E4BEF987 /* Pods-Carton.release.xcconfig */,
+				10987322456D8868C9325BE9 /* Pods-Carton-tvOS.debug.xcconfig */,
+				4CD5ED6F4504AD1FB17965F2 /* Pods-Carton-tvOS.release.xcconfig */,
+				F4A72B31846F79B7B46B8CC6 /* Pods-Carton-tvOSTests.debug.xcconfig */,
+				27DF77B72D9835B3C1BF88AB /* Pods-Carton-tvOSTests.release.xcconfig */,
+				175E19C0C59D07CCD3337C44 /* Pods-CartonTests.debug.xcconfig */,
+				8C878B03E08B212C4A577BBC /* Pods-CartonTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -207,9 +207,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* reactdemo */,
+				13B07FAE1A68108700A75B9A /* Carton */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* reactdemoTests */,
+				00E356EF1AD99517003FC87E /* CartonTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				85D813297A04435F9B3432B8 /* Resources */,
@@ -223,10 +223,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* reactdemo.app */,
-				00E356EE1AD99517003FC87E /* reactdemoTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* reactdemo-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* reactdemo-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* Carton.app */,
+				00E356EE1AD99517003FC87E /* CartonTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* Carton-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* Carton-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -258,9 +258,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* reactdemoTests */ = {
+		00E356ED1AD99517003FC87E /* CartonTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "reactdemoTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CartonTests" */;
 			buildPhases = (
 				A068867C553E3B76DA6F22B2 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -272,14 +272,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = reactdemoTests;
-			productName = reactdemoTests;
-			productReference = 00E356EE1AD99517003FC87E /* reactdemoTests.xctest */;
+			name = CartonTests;
+			productName = CartonTests;
+			productReference = 00E356EE1AD99517003FC87E /* CartonTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* reactdemo */ = {
+		13B07F861A680F5B00A75B9A /* Carton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "reactdemo" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Carton" */;
 			buildPhases = (
 				0288D13DBBD949C8EAD3DF65 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -293,14 +293,14 @@
 			);
 			dependencies = (
 			);
-			name = reactdemo;
-			productName = reactdemo;
-			productReference = 13B07F961A680F5B00A75B9A /* reactdemo.app */;
+			name = Carton;
+			productName = Carton;
+			productReference = 13B07F961A680F5B00A75B9A /* Carton.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* reactdemo-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* Carton-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "reactdemo-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Carton-tvOS" */;
 			buildPhases = (
 				DF43F6720E7DB63500F77260 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -313,14 +313,14 @@
 			);
 			dependencies = (
 			);
-			name = "reactdemo-tvOS";
-			productName = "reactdemo-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* reactdemo-tvOS.app */;
+			name = "Carton-tvOS";
+			productName = "Carton-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* Carton-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* reactdemo-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* Carton-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "reactdemo-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Carton-tvOSTests" */;
 			buildPhases = (
 				62CABD940496D0FF02ACA0DD /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -332,9 +332,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "reactdemo-tvOSTests";
-			productName = "reactdemo-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* reactdemo-tvOSTests.xctest */;
+			name = "Carton-tvOSTests";
+			productName = "Carton-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* Carton-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -361,7 +361,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "reactdemo" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Carton" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -374,10 +374,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* reactdemo */,
-				00E356ED1AD99517003FC87E /* reactdemoTests */,
-				2D02E47A1E0B4A5D006451C7 /* reactdemo-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* reactdemo-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* Carton */,
+				00E356ED1AD99517003FC87E /* CartonTests */,
+				2D02E47A1E0B4A5D006451C7 /* Carton-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* Carton-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -462,7 +462,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-reactdemo-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Carton-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -498,7 +498,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-reactdemo-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Carton-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -520,7 +520,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-reactdemoTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-CartonTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -533,7 +533,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-reactdemo/Pods-reactdemo-resources.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-Carton/Pods-Carton-resources.sh",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/Entypo.ttf",
 				"${PODS_ROOT}/../../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf",
@@ -572,7 +572,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-reactdemo/Pods-reactdemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Carton/Pods-Carton-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DF43F6720E7DB63500F77260 /* [CP] Check Pods Manifest.lock */ = {
@@ -590,7 +590,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-reactdemo-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Carton-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -642,7 +642,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* reactdemoTests.m in Sources */,
+				00E356F31AD99517003FC87E /* CartonTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -668,7 +668,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* reactdemoTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* CartonTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -677,12 +677,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* reactdemo */;
+			target = 13B07F861A680F5B00A75B9A /* Carton */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* reactdemo-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* Carton-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -694,7 +694,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = reactdemo;
+			path = Carton;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -702,14 +702,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 175E19C0C59D07CCD3337C44 /* Pods-reactdemoTests.debug.xcconfig */;
+			baseConfigurationReference = 175E19C0C59D07CCD3337C44 /* Pods-CartonTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = reactdemoTests/Info.plist;
+				INFOPLIST_FILE = CartonTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -719,17 +719,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reactdemo.app/reactdemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carton.app/Carton";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8C878B03E08B212C4A577BBC /* Pods-reactdemoTests.release.xcconfig */;
+			baseConfigurationReference = 8C878B03E08B212C4A577BBC /* Pods-CartonTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = reactdemoTests/Info.plist;
+				INFOPLIST_FILE = CartonTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -739,18 +739,18 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reactdemo.app/reactdemo";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carton.app/Carton";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E4FA4EFBE2C599B879C8659C /* Pods-reactdemo.debug.xcconfig */;
+			baseConfigurationReference = E4FA4EFBE2C599B879C8659C /* Pods-Carton.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
-				INFOPLIST_FILE = reactdemo/Info.plist;
+				INFOPLIST_FILE = Carton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -758,18 +758,18 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = reactdemo;
+				PRODUCT_NAME = Carton;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA08BF7C443BB471E4BEF987 /* Pods-reactdemo.release.xcconfig */;
+			baseConfigurationReference = FA08BF7C443BB471E4BEF987 /* Pods-Carton.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = reactdemo/Info.plist;
+				INFOPLIST_FILE = Carton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -777,14 +777,14 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = reactdemo;
+				PRODUCT_NAME = Carton;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 10987322456D8868C9325BE9 /* Pods-reactdemo-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 10987322456D8868C9325BE9 /* Pods-Carton-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -795,14 +795,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "reactdemo-tvOS/Info.plist";
+				INFOPLIST_FILE = "Carton-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.reactdemo-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Carton-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -812,7 +812,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4CD5ED6F4504AD1FB17965F2 /* Pods-reactdemo-tvOS.release.xcconfig */;
+			baseConfigurationReference = 4CD5ED6F4504AD1FB17965F2 /* Pods-Carton-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -823,14 +823,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "reactdemo-tvOS/Info.plist";
+				INFOPLIST_FILE = "Carton-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.reactdemo-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Carton-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -840,7 +840,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F4A72B31846F79B7B46B8CC6 /* Pods-reactdemo-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = F4A72B31846F79B7B46B8CC6 /* Pods-Carton-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -850,24 +850,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "reactdemo-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Carton-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.reactdemo-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Carton-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reactdemo-tvOS.app/reactdemo-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carton-tvOS.app/Carton-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 27DF77B72D9835B3C1BF88AB /* Pods-reactdemo-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 27DF77B72D9835B3C1BF88AB /* Pods-Carton-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -877,17 +877,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "reactdemo-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "Carton-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.reactdemo-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.facebook.REACT.Carton-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/reactdemo-tvOS.app/reactdemo-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Carton-tvOS.app/Carton-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -994,7 +994,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "reactdemoTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "CartonTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -1003,7 +1003,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "reactdemo" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Carton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -1012,7 +1012,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "reactdemo-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Carton-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1021,7 +1021,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "reactdemo-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "Carton-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1030,7 +1030,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "reactdemo" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Carton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

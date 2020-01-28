@@ -1,8 +1,8 @@
 platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
-target 'reactdemo' do
-  # Pods for reactdemo
+target 'Carton' do
+  # Pods for Carton
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
   pod 'RCTRequired', :path => "../node_modules/react-native/Libraries/RCTRequired"
@@ -36,7 +36,7 @@ target 'reactdemo' do
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
 
-  target 'reactdemoTests' do
+  target 'CartonTests' do
     inherit! :search_paths
     # Pods for testing
   end
@@ -44,10 +44,10 @@ target 'reactdemo' do
   use_native_modules!
 end
 
-target 'reactdemo-tvOS' do
-  # Pods for reactdemo-tvOS
+target 'Carton-tvOS' do
+  # Pods for Carton-tvOS
 
-  target 'reactdemo-tvOSTests' do
+  target 'Carton-tvOSTests' do
     inherit! :search_paths
     # Pods for testing
   end

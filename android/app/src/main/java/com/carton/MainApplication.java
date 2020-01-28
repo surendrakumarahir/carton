@@ -1,4 +1,4 @@
-package com.reactdemo;
+package com.carton;
 
 import android.app.Application;
 import android.content.Context;
