@@ -12,6 +12,7 @@ var initialState = {
   forgotPasswordError: {data: ''},
   registrationToken: [],
   document: '',
+  categoryList: [],
 };
 export default function(state = initialState, action) {
   switch (action.type) {

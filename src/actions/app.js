@@ -1,4 +1,4 @@
-import { SAVE_TOKEN, GET_FEATURED_PRODUCT, GET_LATEST_PRODUCT} from './types';
+import { SAVE_TOKEN, GET_FEATURED_PRODUCT, GET_LATEST_PRODUCT, GET_CATEGORY_LIST} from './types';
 import NavigationService from '../NavigationService';
 import {defaultOptions} from '../config';
 import {logistical} from '../logistical';
@@ -52,6 +52,19 @@ export const getLatestProduct = data => dispatch => {
     const response = await logistical.post('/get_latest_product', data);
     if (response.STATUS === 'success') {
       dispatch({type: GET_LATEST_PRODUCT, payload: response.data});
+      resolve(response.data);
+    } else {
+
+      reject(response.MESSAGE);
+    }
+  });
+};
+
+export const getCategoryList = data => dispatch => {
+  return new Promise(async (resolve, reject) => {
+    const response = await logistical.post('/get_category_list', data);
+    if (response.STATUS === 'success') {
+      dispatch({type: GET_CATEGORY_LIST, payload: response.data});
       resolve(response.data);
     } else {
 

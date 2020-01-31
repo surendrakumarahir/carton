@@ -14,13 +14,18 @@ import {
 import {connect} from 'react-redux';
 import {Container, Icon as NIcon, Input, Item} from 'native-base';
 import ProductGrid from '../components/small/ProductGrid';
-import {getFeaturedProduct, getLatestProduct} from '../actions';
+import {
+  getFeaturedProduct,
+  getLatestProduct,
+  getCategoryList,
+} from '../actions';
 import Icon from 'react-native-vector-icons/Ionicons';
-import HorizontalScroll from '../components/small/HorizontalScroll';
 import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
+import CategoryBlock from '../components/deshboard/CategoryBlock';
+import BannerSlider from '../components/deshboard/BannerSlider';
 
 class Deshboard extends React.Component {
   static navigationOptions = {
@@ -35,6 +40,9 @@ class Deshboard extends React.Component {
       app_token: 'Nj^0=)&$Xmq@3',
     });
     this.props.getLatestProduct({
+      app_token: 'Nj^0=)&$Xmq@3',
+    });
+    this.props.getCategoryList({
       app_token: 'Nj^0=)&$Xmq@3',
     });
   }
@@ -54,15 +62,15 @@ class Deshboard extends React.Component {
   };
   render() {
     const {logo, searchClass} = this.state;
-    const {featured_product, latest_product} = this.props;
+    const {featured_product, latest_product, categoryList} = this.props;
+    console.log(categoryList);
     return (
       <View style={styles.container}>
         <StatusBar backgroundColor="#fff" barStyle="dark-content" />
         <SafeAreaView style={{flex: 1}}>
           <View style={styles.top}>
             {logo ? (
-              <View
-                style={styles.headerBar}>
+              <View style={styles.headerBar}>
                 <TouchableOpacity
                   onPress={() => this.props.navigation.toggleDrawer()}
                   style={{marginTop: 10}}>
@@ -74,7 +82,7 @@ class Deshboard extends React.Component {
                 />
 
                 <TouchableOpacity
-                  onPress={() => this.props.navigation.toggleDrawer()}
+                  onPress={() => console.log('working')}
                   style={{marginTop: 10}}>
                   <Icon name="ios-notifications" color="#838383" size={40} />
                 </TouchableOpacity>
@@ -99,48 +107,10 @@ class Deshboard extends React.Component {
           </View>
           <View style={styles.bottomContainer}>
             <ScrollView showsVerticalScrollIndicator={false}>
-              <View style={{marginVertical: 20}}>
-                {/*<PostHead heading="Discount Coupon Codes" />*/}
-                <HorizontalScroll>
-                  <Image
-                    style={styles.bannerDesign}
-                    source={require('../asset/permotions/permotion1.jpg')}
-                  />
-                  <Image
-                    style={styles.bannerDesign}
-                    source={require('../asset/permotions/permotion2.jpg')}
-                  />
-                  <Image
-                    style={styles.bannerDesign}
-                    source={require('../asset/permotions/permotion3.jpg')}
-                  />
-                </HorizontalScroll>
-              </View>
-              <View style={{marginBottom: 20}}>
-                <Text style={styles.featureLabel}>categories</Text>
-                <HorizontalScroll>
-                  <Image
-                    style={styles.categoryDesign}
-                    source={require('../asset/permotions/permotion1.jpg')}
-                  />
-                  <Image
-                    style={styles.categoryDesign}
-                    source={require('../asset/permotions/permotion2.jpg')}
-                  />
-                  <Image
-                    style={styles.categoryDesign}
-                    source={require('../asset/permotions/permotion3.jpg')}
-                  />
-                  <Image
-                    style={styles.categoryDesign}
-                    source={require('../asset/permotions/permotion2.jpg')}
-                  />
-                  <Image
-                    style={styles.categoryDesign}
-                    source={require('../asset/permotions/permotion3.jpg')}
-                  />
-                </HorizontalScroll>
-              </View>
+              <BannerSlider />
+              <CategoryBlock categoryList={categoryList} />
+
+
               <ProductGrid
                 title="Feature Product"
                 data={featured_product}
@@ -160,15 +130,16 @@ class Deshboard extends React.Component {
 }
 
 const mapStateToProps = ({deshboard}) => {
-  const {featured_product, latest_product} = deshboard;
+  const {featured_product, latest_product, categoryList} = deshboard;
   return {
     featured_product,
     latest_product,
+    categoryList,
   };
 };
 export default connect(
   mapStateToProps,
-  {getFeaturedProduct, getLatestProduct},
+  {getFeaturedProduct, getLatestProduct, getCategoryList},
 )(Deshboard);
 
 const styles = StyleSheet.create({
@@ -198,33 +169,11 @@ const styles = StyleSheet.create({
     marginRight: 5,
     fontSize: 30,
   },
-
   bottomContainer: {
     flex: 6,
     backgroundColor: '#f8f8ff',
     width: '100%',
     paddingHorizontal: 15,
-  },
-  featureLabel: {
-    color: '#e30613',
-    fontSize: 20,
-    marginVertical: 10,
-  },
-  bannerDesign: {
-    flex: 1,
-    marginRight: wp(5),
-    height: hp(30),
-    resizeMode: 'cover',
-    width: wp(70),
-  },
-  categoryDesign: {
-    flex: 1,
-    borderRadius: 5,
-    borderWidth: 1,
-    marginRight: wp(3),
-    height: hp(15),
-    resizeMode: 'cover',
-    width: wp(25),
   },
   headerBar: {
     flexDirection: 'row',

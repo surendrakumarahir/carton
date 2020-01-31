@@ -3,6 +3,7 @@ import {View, StyleSheet, Image, Text, SafeAreaView} from 'react-native';
 // import {connect} from 'react-redux';
 // import {removeUserData} from '../../actions';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
+import {Icon as MaterialIcons} from 'react-native-vector-icons/MaterialIcons';
 
 class CustomSidebarMenu extends Component {
   constructor() {
@@ -42,18 +43,33 @@ class CustomSidebarMenu extends Component {
       {
         navOptionThumb: 'file-document-outline',
         navOptionName: 'Term and Conditions',
-        screenToNavigate: 'TermAndConditions',
+        screenToNavigate: 'TermAndCondition',
       },
       {
-        navOptionThumb: 'comment-question',
-        navOptionName: 'FAQ',
-        screenToNavigate: 'FAQ',
+        navOptionThumb: 'file-document-outline',
+        navOptionName: 'Language',
+        screenToNavigate: 'Language',
       },
       {
-        navOptionThumb: 'help-circle',
-        navOptionName: 'Help',
-        screenToNavigate: 'Help',
+        navOptionThumb: 'file-document-outline',
+        navOptionName: 'Notifications',
+        screenToNavigate: 'Notification',
       },
+      {
+        navOptionThumb: 'file-document-outline',
+        navOptionName: 'Setting',
+        screenToNavigate: 'Setting',
+      },
+      // {
+      //   navOptionThumb: 'comment-question',
+      //   navOptionName: 'FAQ',
+      //   screenToNavigate: 'FAQ',
+      // },
+      // {
+      //   navOptionThumb: 'help-circle',
+      //   navOptionName: 'Help',
+      //   screenToNavigate: 'Help',
+      // },
     ];
   }
 
@@ -69,71 +85,60 @@ class CustomSidebarMenu extends Component {
   render() {
     return (
       <SafeAreaView>
-         <View style={styles.sideMenuContainer}>
-        {/*Top Large Image */}
-        <Image
-          source={require('../../asset/logo.png')}
-          style={styles.sideMenuProfileIcon}
-        />
-        {/*Divider between Top Image and Sidebar Option*/}
-        <View
-          style={{
-            width: '100%',
-            height: 1,
-            backgroundColor: '#e2e2e2',
-            marginTop: 15,
-          }}
-        />
-        {/*Setting up Navigation Options from option array using loop*/}
-        <View style={{width: '100%'}}>
-          {this.items.map((item, key) => (
-            <View
-              style={{
-                flexDirection: 'row',
-                alignItems: 'center',
-                paddingTop: 5,
-                paddingBottom: 5,
-                backgroundColor:
-                  global.currentScreenIndex === key ? '#e0dbdb' : '#ffffff',
-              }}
-              key={key}>
-              <View style={{marginRight: 10, marginLeft: 20}}>
-                <Icon name={item.navOptionThumb} size={25} color="#808080" />
-              </View>
-              <Text
-                style={{
-                  fontSize: 20,
-                  color:
-                    global.currentScreenIndex === key ? '#FF9800' : 'black',
-                }}
-                onPress={() => {
-                  global.currentScreenIndex = key;
-                  this.props.navigation.navigate(item.screenToNavigate);
-                }}>
-                {item.navOptionName}
-              </Text>
-            </View>
-          ))}
+        <View style={styles.sideMenuContainer}>
+          {/*Top Large Image */}
+          <Image
+            source={require('../../asset/logo.png')}
+            style={styles.sideMenuProfileIcon}
+          />
+          {/*Divider between Top Image and Sidebar Option*/}
           <View
             style={{
-              flexDirection: 'row',
-              alignItems: 'center',
-              paddingTop: 5,
-              paddingBottom: 5,
-              marginLeft: 20,
-            }}>
-            <Icon name="logout" size={25} color="#808080" />
-            <Text
-              onPress={() => this.logout()}
-              style={{fontSize: 25, marginLeft: 20}}>
-              Logout
-            </Text>
+              width: '100%',
+              height: 1,
+              backgroundColor: '#e2e2e2',
+              marginTop: 15,
+            }}
+          />
+          {/*Setting up Navigation Options from option array using loop*/}
+          <View style={{width: '100%'}}>
+            {this.items.map((item, key) => (
+              <View
+                style={[
+                  styles.menuList,
+                  {
+                    backgroundColor:
+                      global.currentScreenIndex === key ? '#e0dbdb' : '#ffffff',
+                  },
+                ]}
+                key={key}>
+                <View style={styles.icon}>
+                  <Icon name={item.navOptionThumb} size={20} color="#808080" />
+                </View>
+                <Text
+                  style={{
+                    fontSize: 15,
+                    color:
+                      global.currentScreenIndex === key ? '#FF9800' : 'black',
+                  }}
+                  onPress={() => {
+                    global.currentScreenIndex = key;
+                    this.props.navigation.navigate(item.screenToNavigate);
+                  }}>
+                  {item.navOptionName}
+                </Text>
+              </View>
+            ))}
+            <View style={styles.menuList}>
+              <Icon name="logout" style={styles.icon} size={20} color="#808080" />
+              <Text onPress={() => this.logout()} >
+                Logout
+              </Text>
+            </View>
           </View>
         </View>
-      </View>
-    
       </SafeAreaView>
-     );
+    );
   }
 }
 // const mapStateToProps = state => {
@@ -155,6 +160,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingTop: 20,
   },
+  menuList: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingTop: 10,
+    paddingBottom: 10,
+  },
+  icon: {marginRight: 10, marginLeft: 20},
   sideMenuProfileIcon: {
     resizeMode: 'contain',
     width: 250,
