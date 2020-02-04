@@ -6,6 +6,7 @@ import Setting from './Setting';
 import TermAndCondition from './TermAndCondition';
 import Search from './Search';
 import Notification from './Notification';
+import Category from './Category';
 
 export  {
   About,
@@ -16,4 +17,5 @@ export  {
   TermAndCondition,
   Search,
   Notification,
+    Category,
 };

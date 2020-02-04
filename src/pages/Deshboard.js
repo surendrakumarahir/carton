@@ -34,16 +34,23 @@ class Deshboard extends React.Component {
   state = {
     logo: true,
     searchClass: false,
+      keywords: '',
   };
   componentDidMount() {
     this.props.getFeaturedProduct({
       app_token: 'Nj^0=)&$Xmq@3',
+      page: 1,
+      limit: 9,
     });
     this.props.getLatestProduct({
       app_token: 'Nj^0=)&$Xmq@3',
+      page: 1,
+      limit: 9,
     });
     this.props.getCategoryList({
       app_token: 'Nj^0=)&$Xmq@3',
+      page: 1,
+      limit: 9,
     });
   }
 
@@ -60,6 +67,9 @@ class Deshboard extends React.Component {
       searchClass: false,
     });
   };
+  onTextChange = value => {
+      this.setState({keywords: value})
+  }
   render() {
     const {logo, searchClass} = this.state;
     const {featured_product, latest_product, categoryList} = this.props;
@@ -99,23 +109,30 @@ class Deshboard extends React.Component {
                   onBlur={() => this.onBlur()}
                   onFocus={() => this.onFocus()}
                   placeholder="Search Product"
+                  value={this.state.keywords}
                   style={styles.searchInput}
+                  onTextChange={text => this.onTextChange(text)}
                 />
-                <NIcon name="ios-search" style={styles.searchIcons} />
+                <TouchableOpacity onPress={() => this.props.navigation.navigate('Search', {keyworks: this.state.keyworks})}>
+                  <NIcon name="ios-search" style={styles.searchIcons} />
+                </TouchableOpacity>
               </Item>
             </View>
           </View>
           <View style={styles.bottomContainer}>
             <ScrollView showsVerticalScrollIndicator={false}>
               <BannerSlider />
-              <CategoryBlock categoryList={categoryList} />
-
+              <CategoryBlock
+                navigation={this.props.navigation}
+                categoryList={categoryList}
+              />
 
               <ProductGrid
                 title="Feature Product"
                 data={featured_product}
                 imagePath="http://carton.imperialitforweb.com/public/uploads/product"
               />
+
               <ProductGrid
                 title="Latest Product"
                 data={latest_product}
@@ -148,7 +165,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   top: {
-    flex: 2,
+    flex: 1,
     backgroundColor: '#ffffff',
     borderBottomColor: '#e7e5f0',
     borderBottomWidth: 1,
@@ -170,7 +187,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
   },
   bottomContainer: {
-    flex: 6,
+    flex: 4,
     backgroundColor: '#f8f8ff',
     width: '100%',
     paddingHorizontal: 15,

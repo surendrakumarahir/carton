@@ -1,53 +1,7 @@
 import {FlatList, StyleSheet, Text, View} from 'react-native';
 import ProductCard from './ProductCard';
 import React from 'react';
-// const data = [
-//   {
-//     image:
-//       'http://carton.imperialitforweb.com/public/uploads/product/category_1578488647.png',
-//     name: 'Universal RSC Box',
-//   },
-//   {
-//     image:
-//       'http://carton.imperialitforweb.com/public/uploads/product/category_1578488647.png',
-//     name: 'Universal RSC Box',
-//   },
-//   {
-//     image:
-//       'http://carton.imperialitforweb.com/public/uploads/product/category_1578488647.png',
-//     name: 'Universal RSC Box',
-//   },
-//   {
-//     image:
-//       'http://carton.imperialitforweb.com/public/uploads/product/category_1578488647.png',
-//     name: 'Universal RSC Box',
-//   },
-//   {
-//     image:
-//       'http://carton.imperialitforweb.com/public/uploads/product/category_1578488647.png',
-//     name: 'Universal RSC Box',
-//   },
-//   {
-//     image:
-//       'http://carton.imperialitforweb.com/public/uploads/product/category_1578488647.png',
-//     name: 'Universal RSC Box',
-//   },
-//   {
-//     image:
-//       'http://carton.imperialitforweb.com/public/uploads/product/category_1578488647.png',
-//     name: 'Universal RSC Box',
-//   },
-//   {
-//     image:
-//       'http://carton.imperialitforweb.com/public/uploads/product/category_1578488647.png',
-//     name: 'Universal RSC Box',
-//   },
-//   {
-//     image:
-//       'http://carton.imperialitforweb.com/public/uploads/product/category_1578488647.png',
-//     name: 'Universal RSC Box',
-//   },
-// ];
+
 const ProductGrid = ({title, data, imagePath}) => {
   return (
     <View>

@@ -25,6 +25,7 @@ export const loginUser = data => dispatch => {
     const response = await logistical.post('/loginUser', data);
     if (response.STATUS === 'success') {
       dispatch({type: 'LOADING', payload: false});
+      dispatch({type: 'USER_DATA_SAVE', payload: response.user_data})
       resolve(response.MESSAGE);
     } else {
       //dispatch(error(response.data.error[0]));

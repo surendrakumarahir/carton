@@ -1,12 +1,12 @@
-import {Image, StyleSheet, Text, View} from 'react-native';
+import {Image, StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import HorizontalScroll from '../small/HorizontalScroll';
 import {
-    widthPercentageToDP as wp,
-    heightPercentageToDP as hp,
+  widthPercentageToDP as wp,
+  heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 import React from 'react';
 
-const CategoryBlock = props => {
+const CategoryBlock = (props) => {
   return (
     <View style={{marginBottom: 20}}>
       <Text style={styles.featureLabel}>categories</Text>
@@ -38,6 +38,33 @@ const CategoryBlock = props => {
             </View>
           );
         })}
+        <View style={{marginRight: wp(3)}} key={'abk'}>
+          <TouchableOpacity
+            onPress={() => props.navigation.navigate('Category')}
+            opacity={0.7}
+            style={{
+              height: hp(15),
+              resizeMode: 'cover',
+              width: wp(25),
+              borderWidth: 1,
+              backgroundColor: '#fffaf1',
+              flex: 1,
+              alignItems: 'center',
+              justifyContent: 'center',
+              borderRadius: 5,
+              borderColor: '#484848',
+            }}>
+            <Text
+              style={{
+                fontSize: 17,
+                fontWeight: 'bold',
+                color: '#000',
+                alignSelf: 'center',
+              }}>
+              More
+            </Text>
+          </TouchableOpacity>
+        </View>
       </HorizontalScroll>
     </View>
   );

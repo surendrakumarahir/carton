@@ -63,25 +63,26 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
-class Search extends React.Component {
+import {connect} from 'react-redux';
+import {
+  getCategoryList,
+  getFeaturedProduct,
+  getLatestProduct,
+} from '../../actions';
+class Category extends React.Component {
   state = {
     data: '',
   };
-  // componentDidMount() {
-  //   fetch('https://jsonplaceholder.typicode.com/photos')
-  //     .then(response => response.json())
-  //     .then(json => {
-  //       console.log(json);
-  //       this.setState({data: json});
-  //     });
-  // }
+  componentDidMount() {
+   console.log(this.props.categoryList);
+  }
 
   render() {
     return (
       <View style={styles.container}>
         <FlatList
-          data={data}
-          renderItem={({item}) => <PaperCard data={data} />}
+          data={this.props.categoryList}
+          renderItem={({item}) => <PaperCard data={item} />}
           keyExtractor={item => item.id}
           numColumns={2}
           contentContainerStyle={{
@@ -93,7 +94,16 @@ class Search extends React.Component {
   }
 }
 
-export default Search;
+const mapStateToProps = ({deshboard}) => {
+  const {categoryList} = deshboard;
+  return {
+    categoryList,
+  };
+};
+export default connect(
+  mapStateToProps,
+  {},
+)(Category);
 
 const styles = StyleSheet.create({
   container: {
