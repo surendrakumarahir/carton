@@ -198,11 +198,11 @@ class Login extends React.Component {
             danger>
             <TextNew style={styles.signup}>Sign Up</TextNew>
           </Button>
-          <Text
-            style={{marginTop: 10}}
-            onPress={() => this.props.navigation.navigate('Deshboard')}>
-            skip
-          </Text>
+          {/*<Text*/}
+          {/*  style={{marginTop: 10}}*/}
+          {/*  onPress={() => this.props.navigation.navigate('Deshboard')}>*/}
+          {/*  skip*/}
+          {/*</Text>*/}
         </View>
       </Container>
     );

@@ -6,15 +6,13 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 
-const PaperCard = props => (
+const PaperCard = ({data, imagePath}) => (
   <Card style={{width: wp(46), marginHorizontal: wp(1), marginVertical: wp(2)}}>
     {/*<Card.Title title="Card Title" subtitle="Card Subtitle" left={(props) => <Avatar.Icon {...props} icon="folder" />} />*/}
-
+    {/*  {console.log('ccc', `${imagePath}/${data.image}`)}*/}
     <Card.Cover
       source={{
-        uri: `http://carton.imperialitforweb.com/public/uploads/category/${
-          props.data.image
-        }`,
+        uri: `${imagePath}/${data.image}`,
       }}
     />
     <Card.Content>
@@ -26,7 +24,7 @@ const PaperCard = props => (
           color: '#000',
           textAlign: 'center',
         }}>
-        {props.data.name}
+        {data.name}
       </Text>
         <Paragraph> Corrugated Card 5Ply Heavy Duty Cartons,</Paragraph>
       {/*<Paragraph>{props.data.details}</Paragraph>*/}

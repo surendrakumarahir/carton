@@ -82,7 +82,7 @@ class Category extends React.Component {
       <View style={styles.container}>
         <FlatList
           data={this.props.categoryList}
-          renderItem={({item}) => <PaperCard data={item} />}
+          renderItem={({item}) => <PaperCard imagePath='http://carton.imperialitforweb.com/public/uploads/category' data={item} />}
           keyExtractor={item => item.id}
           numColumns={2}
           contentContainerStyle={{

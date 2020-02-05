@@ -34,7 +34,7 @@ class Deshboard extends React.Component {
   state = {
     logo: true,
     searchClass: false,
-      keywords: '',
+    keywords: '',
   };
   componentDidMount() {
     this.props.getFeaturedProduct({
@@ -68,8 +68,8 @@ class Deshboard extends React.Component {
     });
   };
   onTextChange = value => {
-      this.setState({keywords: value})
-  }
+    this.setState({keywords: value});
+  };
   render() {
     const {logo, searchClass} = this.state;
     const {featured_product, latest_product, categoryList} = this.props;
@@ -111,9 +111,14 @@ class Deshboard extends React.Component {
                   placeholder="Search Product"
                   value={this.state.keywords}
                   style={styles.searchInput}
-                  onTextChange={text => this.onTextChange(text)}
+                  onChangeText={text => this.onTextChange(text)}
                 />
-                <TouchableOpacity onPress={() => this.props.navigation.navigate('Search', {keyworks: this.state.keyworks})}>
+                <TouchableOpacity
+                  onPress={() =>
+                    this.props.navigation.navigate('Search', {
+                        keywords: this.state.keywords,
+                    })
+                  }>
                   <NIcon name="ios-search" style={styles.searchIcons} />
                 </TouchableOpacity>
               </Item>

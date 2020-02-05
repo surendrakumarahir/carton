@@ -63,25 +63,47 @@ import {
   widthPercentageToDP as wp,
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
+import {connect} from 'react-redux';
+import {getSearchedProduct} from '../../actions';
+
 class Search extends React.Component {
   state = {
     data: '',
+    imagePath: '',
   };
-  // componentDidMount() {
-  //   fetch('https://jsonplaceholder.typicode.com/photos')
-  //     .then(response => response.json())
-  //     .then(json => {
-  //       console.log(json);
-  //       this.setState({data: json});
-  //     });
-  // }
+  componentDidMount() {
+    const keyword = this.props.navigation.getParam('keywords');
+    console.log('keywork', this.props.navigation.getParam('keywords'));
+    const data = {
+      app_token: 'Nj^0=)&$Xmq@3',
+      page: 1,
+      limit: 5,
+      keywords: keyword,
+    };
+    this.props
+      .getSearchedProduct(data)
+      .then(response => {
+        console.log('res', response);
+        this.setState({
+          data: response.data,
+          imagePath: response.image_path,
+        })
+      })
+      .catch(error => {
+        console.log(error);
+      });
+
+  }
 
   render() {
+    const {imagePath, data} = this.state;
+    // console.log('image', imagePath);
+    // console.log('data', data);
     return (
       <View style={styles.container}>
         <FlatList
           data={data}
-          renderItem={({item}) => <PaperCard data={data} />}
+          renderItem={({item}) => <PaperCard imagePath={imagePath} data={item} />}
           keyExtractor={item => item.id}
           numColumns={2}
           contentContainerStyle={{
@@ -92,8 +114,16 @@ class Search extends React.Component {
     );
   }
 }
-
-export default Search;
+const mapStateToProps = ({app}) => {
+  const {userData} = app;
+  return {
+    userData,
+  };
+};
+export default connect(
+  mapStateToProps,
+  {getSearchedProduct},
+)(Search);
 
 const styles = StyleSheet.create({
   container: {

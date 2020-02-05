@@ -1,4 +1,10 @@
-import { SAVE_TOKEN, GET_FEATURED_PRODUCT, GET_LATEST_PRODUCT, GET_CATEGORY_LIST} from './types';
+import {
+  SAVE_TOKEN,
+  GET_FEATURED_PRODUCT,
+  GET_LATEST_PRODUCT,
+  GET_CATEGORY_LIST,
+  REMOVE_USER_DATA,
+} from './types';
 import NavigationService from '../NavigationService';
 import {defaultOptions} from '../config';
 import {logistical} from '../logistical';
@@ -8,7 +14,9 @@ export const saveUserDataLogin = data => dispatch => {
   return new Promise(async (resolve, reject) => {
     const response = await logistical.post('/createUser', data);
     if (response.STATUS === 'success') {
-      // dispatch({type: 'OTP_TOKEN_R', payload: response.data});
+      dispatch({type: 'USER_DATA_SAVE', payload: response.user_data});
+      dispatch({type: 'SAVE_TOKEN', payload: response.user_data.user_token});
+
       dispatch({type: 'LOADING', payload: false});
       resolve(response.MESSAGE);
     } else {
@@ -19,13 +27,18 @@ export const saveUserDataLogin = data => dispatch => {
   });
 };
 
+export const removeUserData = data => async dispatch => {
+  dispatch({type: REMOVE_USER_DATA});
+  NavigationService.navigate('Login');
+};
+
 export const loginUser = data => dispatch => {
   dispatch({type: 'LOADING', payload: true});
   return new Promise(async (resolve, reject) => {
     const response = await logistical.post('/loginUser', data);
     if (response.STATUS === 'success') {
       dispatch({type: 'LOADING', payload: false});
-      dispatch({type: 'USER_DATA_SAVE', payload: response.user_data})
+      dispatch({type: 'USER_DATA_SAVE', payload: response.user_data});
       resolve(response.MESSAGE);
     } else {
       //dispatch(error(response.data.error[0]));
@@ -42,7 +55,6 @@ export const getFeaturedProduct = data => dispatch => {
       dispatch({type: GET_FEATURED_PRODUCT, payload: response.data});
       resolve(response.data);
     } else {
-
       reject(response.MESSAGE);
     }
   });
@@ -55,7 +67,6 @@ export const getLatestProduct = data => dispatch => {
       dispatch({type: GET_LATEST_PRODUCT, payload: response.data});
       resolve(response.data);
     } else {
-
       reject(response.MESSAGE);
     }
   });
@@ -68,7 +79,21 @@ export const getCategoryList = data => dispatch => {
       dispatch({type: GET_CATEGORY_LIST, payload: response.data});
       resolve(response.data);
     } else {
+      reject(response.MESSAGE);
+    }
+  });
+};
 
+//get_searched_product
+
+export const getSearchedProduct = data => dispatch => {
+  return new Promise(async (resolve, reject) => {
+    const response = await logistical.post('/get_searched_product', data);
+    console.log('response', response);
+    if (response.STATUS === 'success') {
+     // dispatch({type: GET_CATEGORY_LIST, payload: response.data});
+      resolve(response);
+    } else {
       reject(response.MESSAGE);
     }
   });

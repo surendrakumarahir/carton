@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {View, StyleSheet, Image, Text, SafeAreaView} from 'react-native';
-// import {connect} from 'react-redux';
-// import {removeUserData} from '../../actions';
+ import {connect} from 'react-redux';
+ import {removeUserData} from '../../actions';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 import {Icon as MaterialIcons} from 'react-native-vector-icons/MaterialIcons';
 
@@ -77,10 +77,10 @@ class CustomSidebarMenu extends Component {
     console.log('working');
     // console.log(this.props.userData);
     // console.log(this.props.token);
-    // this.props.removeUserData({
-    //   user_id: this.props.userData.id,
-    //   access_token: this.props.token,
-    // });
+    this.props.removeUserData({
+      user_id: this.props.userData.id,
+      access_token: this.props.token,
+    });
   };
   render() {
     return (
@@ -141,17 +141,16 @@ class CustomSidebarMenu extends Component {
     );
   }
 }
-// const mapStateToProps = state => {
-//   return {
-//     userData: state.app.userData,
-//     token: state.app.token,
-//   };
-// };
-// export default connect(
-//   mapStateToProps,
-//   {removeUserData},
-// )(CustomSidebarMenu);
-export default CustomSidebarMenu;
+const mapStateToProps = state => {
+  return {
+    userData: state.app.userData,
+    token: state.app.token,
+  };
+};
+export default connect(
+  mapStateToProps,
+  {removeUserData},
+)(CustomSidebarMenu);
 const styles = StyleSheet.create({
   sideMenuContainer: {
     width: '100%',
