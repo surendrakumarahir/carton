@@ -138,7 +138,7 @@ class Login extends React.Component {
             baseColor={tintColor}
             lineWidth={1}
             label="Email"
-            onChangeText={text => this.setState({email: text})}
+            onChangeText={text => this.setState({email: text.trim()})}
             value={this.state.email}
             containerStyle={styles.textField}
           />
@@ -169,9 +169,9 @@ class Login extends React.Component {
         ) : null}
         {this.renderMessages()}
         <View style={{marginTop: 30, width: 330, alignItems: 'center'}}>
-          {/*{this.props.loading ? (*/}
-          {/*  <ActivityIndicator />*/}
-          {/*) : (*/}
+          {this.props.loading ? (
+           <ActivityIndicator />
+          ) : (
             <Button
               style={{height: 55, backgroundColor: '#e30613'}}
               onPress={() => this.onSubmitPress()}
@@ -179,7 +179,7 @@ class Login extends React.Component {
               danger>
               <TextNew style={styles.signup}>Login</TextNew>
             </Button>
-          {/*)}*/}
+          )}
           <View
             style={{
               width: 330,

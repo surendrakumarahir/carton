@@ -13,11 +13,12 @@ export const saveUserDataLogin = data => dispatch => {
   dispatch({type: 'LOADING', payload: true});
   return new Promise(async (resolve, reject) => {
     const response = await logistical.post('/createUser', data);
+    console.log('response', response);
     if (response.STATUS === 'success') {
-      dispatch({type: 'USER_DATA_SAVE', payload: response.user_data});
-      dispatch({type: 'SAVE_TOKEN', payload: response.user_data.user_token});
+      // dispatch({type: 'USER_DATA_SAVE', payload: response.user_data});
+      // dispatch({type: 'SAVE_TOKEN', payload: response.user_data.user_token});
 
-      dispatch({type: 'LOADING', payload: false});
+       dispatch({type: 'LOADING', payload: false});
       resolve(response.MESSAGE);
     } else {
       //dispatch(error(response.data.error[0]));
@@ -39,6 +40,7 @@ export const loginUser = data => dispatch => {
     if (response.STATUS === 'success') {
       dispatch({type: 'LOADING', payload: false});
       dispatch({type: 'USER_DATA_SAVE', payload: response.user_data});
+      dispatch({type: 'SAVE_TOKEN', payload: response.user_data.user_token});
       resolve(response.MESSAGE);
     } else {
       //dispatch(error(response.data.error[0]));

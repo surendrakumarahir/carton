@@ -44,6 +44,11 @@ class Logistical {
           if (response.ok) {
             return response.json();
           }
+
+          if(response.status === 500 || response.status === 401 || response.status === 404) {
+            let customResponse = {"STATUS":"fail","MESSAGE":"Somthing Go Wrong"};
+            return customResponse;
+          }
           // Possible 401 or other network error
           return response
             .json()

@@ -33,9 +33,9 @@ export default function(state = initialState, action) {
     case 'GET_TOKEN':
       return {...state, token: action.token};
     case 'SAVE_TOKEN':
-      return {...state, token: action.token};
+      return {...state, token: action.payload};
     case 'REMOVE_TOKEN':
-      return {...state, token: action.token};
+      return {...state, token: action.payload};
     case 'FORGOT_PASSWORD_USER_DATA':
       return {...state, forgotPassword: action.payload};
     case 'FORGOT_PASSWORD_ERROR':

@@ -39,6 +39,7 @@ class Signup extends React.Component {
       name: '',
       email: '',
       password: '',
+      mobile: '',
       password_confirm: '',
       hasError: false,
       errorText: '',
@@ -48,16 +49,45 @@ class Signup extends React.Component {
     };
   }
 
+  verifyEmail(email) {
+    var reg = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return reg.test(email);
+  }
+
   onSubmitPress = () => {
+    const {name, email, mobile, password} = this.state;
+
+    if (
+      email === '' ||
+      name === '' ||
+      mobile === '' ||
+      password === ''
+    ) {
+      this.setState({hasError: true, errorText: "Need to Fill all the field"});
+      return;
+    }
+    if (!this.verifyEmail(email)) {
+      this.setState({
+        hasError: true,
+        errorText: "Email id is not correct",
+      });
+      return;
+    } else {
+      this.setState({
+        hasError: false,
+      });
+    }
+    const data = {
+      name,
+      email,
+      mobile,
+      password,
+      app_token: 'Nj^0=)&$Xmq@3',
+      user_type: 'seller',
+    }
+    console.log(data);
     this.props
-      .saveUserDataLogin({
-        email: this.state.email,
-        password: this.state.password,
-        name: this.state.name,
-        mobile: '8883838',
-        app_token: 'Nj^0=)&$Xmq@3',
-        user_type: 'seller',
-      })
+      .saveUserDataLogin(data)
       .then(response => {
         Toast.show({
           text: response,
@@ -67,8 +97,8 @@ class Signup extends React.Component {
           duration: 4000,
         });
         setTimeout(() => {
-          this.props.navigation.navigate('Deshboard');
-        }, 1000);
+          this.props.navigation.navigate('Login');
+        }, 4000);
       })
       .catch(error => {
         Toast.show({
@@ -156,7 +186,18 @@ class Signup extends React.Component {
               value={this.state.email}
               containerStyle={styles.textField}
             />
-
+             <OutlinedTextField
+              // error="name in"
+              keyboardType="number-pad"
+              tintColor={tintColor}
+              textColor={tintColor}
+              baseColor={tintColor}
+              lineWidth={1}
+              label="Mobile"
+              onChangeText={text => this.setState({mobile: text})}
+              value={this.state.mobile}
+              containerStyle={styles.textField}
+            />
             <View style={{marginTop: 0}}>
               <OutlinedTextField
                 tintColor={tintColor}
@@ -175,24 +216,7 @@ class Signup extends React.Component {
                 onPress={this.changePwdType}
               />
             </View>
-            <View>
-              <OutlinedTextField
-                tintColor={tintColor}
-                lineWidth={1}
-                textColor={tintColor}
-                baseColor={tintColor}
-                label="Password Confirmation"
-                secureTextEntry={this.state.isPassword}
-                onChangeText={text => this.setState({password_confirm: text})}
-                value={this.state.password_confirm}
-                containerStyle={styles.textField}
-              />
-              <Icon
-                style={styles.icon}
-                name={this.state.icEye}
-                onPress={this.changePwdType}
-              />
-            </View>
+          
           </View>
           {this.state.hasError ? (
             <Text
@@ -202,9 +226,9 @@ class Signup extends React.Component {
           ) : null}
           {this.renderMessages()}
           <View style={{marginTop: 30, width: 330, alignItems: 'center'}}>
-            {/*{this.props.loading ? (*/}
-            {/*  <ActivityIndicator />*/}
-            {/*) : (*/}
+            {this.props.loading ? (
+              <ActivityIndicator />
+            ) : (
             <Button
               style={{height: 55, backgroundColor: '#e30613'}}
               onPress={() => this.onSubmitPress()}
@@ -212,7 +236,7 @@ class Signup extends React.Component {
               danger>
               <TextNew style={styles.signup}>Submit</TextNew>
             </Button>
-            {/*)}*/}
+            )}
 
             <TouchableOpacity
               style={styles.textBottom}

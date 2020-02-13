@@ -101,7 +101,7 @@ const DeshboardStack = createStackNavigator(
     Notification: {
       screen: Notification,
       navigationOptions: ({navigation}) => ({
-        title: 'Term And Conditions',
+        title: 'Notification',
         headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
         ...defaultOptions,
       }),
