@@ -133,12 +133,14 @@ class Deshboard extends React.Component {
               />
 
               <ProductGrid
+               navigation={this.props.navigation}
                 title="Feature Product"
                 data={featured_product}
                 imagePath="http://carton.imperialitforweb.com/public/uploads/product"
               />
 
               <ProductGrid
+               navigation={this.props.navigation}
                 title="Latest Product"
                 data={latest_product}
                 imagePath="http://carton.imperialitforweb.com/public/uploads/product"

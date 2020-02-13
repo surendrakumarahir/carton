@@ -7,6 +7,7 @@ import TermAndCondition from './TermAndCondition';
 import Search from './Search';
 import Notification from './Notification';
 import Category from './Category';
+import Product from './Product';
 
 export  {
   About,
@@ -18,4 +19,5 @@ export  {
   Search,
   Notification,
     Category,
+    Product,
 };

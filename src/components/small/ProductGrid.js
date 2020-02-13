@@ -2,7 +2,7 @@ import {FlatList, StyleSheet, Text, View} from 'react-native';
 import ProductCard from './ProductCard';
 import React from 'react';
 
-const ProductGrid = ({title, data, imagePath}) => {
+const ProductGrid = ({navigation, title, data, imagePath}) => {
   return (
     <View>
       <Text style={styles.featureLabel}>{title}</Text>
@@ -11,7 +11,7 @@ const ProductGrid = ({title, data, imagePath}) => {
           columnWrapperStyle={styles.flatList}
           data={data}
           renderItem={({item}) => (
-            <ProductCard name={item.name} image={item.image} imagePath={imagePath} />
+            <ProductCard navigation={navigation} name={item.name} image={item.image} imagePath={imagePath} />
           )}
           keyExtractor={(item, index) => index}
           numColumns={3}

@@ -1,17 +1,22 @@
-import {Image, Text, View, StyleSheet, Dimensions} from 'react-native';
+import {Image, Text, View, StyleSheet, Dimensions, TouchableOpacity} from 'react-native';
 import React from 'react';
 const {height, width} = Dimensions.get('window');
-const ProductCard = ({name, image, imagePath}) => {
+const ProductCard = ({navigation, name, image, imagePath}) => {
     return (
+        
         <View style={styles.featureProduct}>
-            <Image
-                style={styles.featureImage}
-                source={{
-                    uri: imagePath + '/' + image,
-                }}
-            />
-            <Text style={styles.name}>{name}</Text>
-        </View>
+            <TouchableOpacity onPress={() => navigation.navigate('Product')}>
+                    <Image
+                        style={styles.featureImage}
+                        source={{
+                            uri: imagePath + '/' + image,
+                        }}
+                    />
+                    <Text style={styles.name}>{name}</Text>
+                    </TouchableOpacity>
+                </View>
+       
+       
     );
 };
 

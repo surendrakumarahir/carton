@@ -23,6 +23,7 @@ import {
   TermAndCondition,
   Notification,
   Category,
+  Product,
 } from './pages/dashboard';
 import {createMaterialBottomTabNavigator} from 'react-navigation-material-bottom-tabs';
 import {createBottomTabNavigator} from 'react-navigation-tabs';
@@ -122,9 +123,17 @@ const DeshboardStack = createStackNavigator(
         ...defaultOptions,
       }),
     },
+    Product: {
+      screen: Product,
+      navigationOptions: ({navigation}) => ({
+        title: 'Product',
+        headerLeft: <NavigationDrawerStructure navigationProps={navigation} />,
+        ...defaultOptions,
+      }),
+    },
   },
   {
-   // initialRouteName: 'Search',
+    initialRouteName: 'Product',
   },
 );
 
